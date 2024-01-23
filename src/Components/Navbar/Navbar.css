@@ -1,0 +1,30 @@
+.navbar-wrapper {
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.navbar {
+  height: 3.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.col {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.col:nth-child(1) {
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.col:nth-child(2) {
+  flex: 4;
+}
+
+.col:nth-child(3) {
+  flex: 1;
+  justify-content: flex-end;
+}

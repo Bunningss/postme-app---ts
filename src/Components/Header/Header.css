@@ -1,0 +1,15 @@
+.headers {
+  text-align: center;
+}
+
+.primary-header {
+  padding: 15px 0 0 0;
+  font-size: var(--font-header-primary);
+}
+
+.hero-tagline {
+  padding: 15px 0;
+  font-size: var(--font-header-tagline);
+  color: var(--color-muted);
+  font-weight: 400;
+}
