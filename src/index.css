@@ -13,11 +13,15 @@
   --color-white: #ffffff;
   --secondary-color: #f4f7fa;
   --border-color: hsl(214.3, 31.8%, 91.4%);
+  --warning-color: red;
   --color-muted: hsl(215.4, 16.3%, 46.9%);
   --radius: 8px;
   --font-regular: 1rem;
-  --font-header-primary: 3.75rem;
-  --font-header-tagline: 1.25rem;
+  --font-header: 3.75rem;
+  --font-header-smscr: 3.75rem;
+  --font-title: 2rem;
+  --font-tagline: 1.25rem;
+  --font-tagline-smscr: 1.125rem;
   --font-weight: 500;
   --transition: 0.15s ease;
   --font-inter: "Inter Tight", sans-serif;
@@ -27,4 +31,9 @@ body {
   font-size: var(--font-regular);
   font-weight: 500;
   color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

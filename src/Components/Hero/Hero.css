@@ -1,5 +1,5 @@
 .hero {
-  height: calc(100vh - 3.75rem);
+  height: calc(100vh - 3.75rem - 1px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,4 +16,10 @@
 .action-buttons {
   display: flex;
   gap: 1.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-content {
+    width: 100%;
+  }
 }

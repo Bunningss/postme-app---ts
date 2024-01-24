@@ -1,0 +1,9 @@
+.title {
+  font-size: 2rem;
+  padding: 10px 0;
+  text-transform: capitalize;
+}
+
+.title.center {
+  text-align: center;
+}

@@ -23,3 +23,7 @@
 .button.secondary:hover {
   background-color: var(--primary-color-variant);
 }
+
+.button.width-full {
+  width: 100%;
+}

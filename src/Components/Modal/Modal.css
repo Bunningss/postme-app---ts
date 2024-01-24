@@ -1,0 +1,13 @@
+.modal {
+  width: 35rem;
+  border-radius: var(--radius);
+  background-color: var(--secondary-color);
+}
+
+.modal-title {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.modal-content {
+  padding: 0.5rem 0;
+}
