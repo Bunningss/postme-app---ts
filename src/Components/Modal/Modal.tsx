@@ -3,14 +3,15 @@ import Title from "../Title/Title";
 import "./Modal.css";
 
 interface ModalProps {
-  content: React.ReactElement;
+  content: JSX.Element;
+  modalTitle: string;
 }
 
-const Modal: React.FC<ModalProps> = ({ content }) => {
+const Modal: React.FC<ModalProps> = ({ content, modalTitle }) => {
   return (
     <div className="modal">
       <div className="modal-title">
-        <Title title="login" center />
+        <Title title={modalTitle} center />
       </div>
       <div className="modal-content">
         <Container>{content}</Container>

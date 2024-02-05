@@ -11,3 +11,8 @@
 .input:focus {
   border: 1px solid var(--border-color);
 }
+
+.input:invalid[data-focused="true"] {
+  border: 2px solid var(--warning-color);
+  color: var(--warning-color);
+}

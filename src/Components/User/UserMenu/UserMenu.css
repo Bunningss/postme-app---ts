@@ -1,0 +1,14 @@
+.usermenu-content {
+  padding: 0 5px 10px 5px;
+}
+
+.username {
+  color: var(--primary-color);
+  font-weight: var(--font-weight);
+  font-size: var(--font-regular);
+}
+
+.email {
+  font-weight: var(--font-weight);
+  font-size: var(--font-regular);
+}

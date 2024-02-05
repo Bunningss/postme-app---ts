@@ -16,6 +16,7 @@
   --warning-color: red;
   --color-muted: hsl(215.4, 16.3%, 46.9%);
   --radius: 8px;
+  --radius-sml: 4px;
   --font-regular: 1rem;
   --font-header: 3.75rem;
   --font-header-smscr: 3.75rem;
@@ -23,6 +24,7 @@
   --font-tagline: 1.25rem;
   --font-tagline-smscr: 1.125rem;
   --font-weight: 500;
+  --animation: 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   --transition: 0.15s ease;
   --font-inter: "Inter Tight", sans-serif;
 }

@@ -5,6 +5,8 @@ interface ButtonProps {
   secondary?: boolean;
   action?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   fullWidth?: boolean;
+  icon?: string;
+  iconLabel?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -12,6 +14,8 @@ const Button: React.FC<ButtonProps> = ({
   secondary,
   action,
   fullWidth,
+  icon,
+  iconLabel,
 }) => {
   return (
     <button
@@ -20,6 +24,7 @@ const Button: React.FC<ButtonProps> = ({
       }`}
       onClick={action}
     >
+      {icon && <img src={icon} alt={iconLabel} className="button-icon" />}
       {label}
     </button>
   );
