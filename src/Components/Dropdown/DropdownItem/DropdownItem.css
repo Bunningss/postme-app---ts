@@ -1,14 +1,14 @@
 .dropdown-item {
   padding: 5px;
   margin: 2px 0;
-  border-radius: var(--radius-sml);
+  border-radius: calc(var(--radius) / 2);
   cursor: pointer;
   font-size: var(--font-regular);
 }
 
 .dropdown-item:hover {
-  background-color: var(--primary-color-variant);
-  color: var(--color-white);
+  background-color: var(--primary-variant);
+  color: var(--secondary);
   transition: background-color, color var(--transition);
 }
 
