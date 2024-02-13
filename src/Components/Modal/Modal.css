@@ -1,11 +1,11 @@
 .modal {
   width: 35rem;
   border-radius: var(--radius);
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-variant);
 }
 
 .modal-title {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--primary-variant);
 }
 
 .modal-content {

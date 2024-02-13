@@ -3,7 +3,7 @@
 }
 
 .username {
-  color: var(--primary-color);
+  color: var(--primary);
   font-weight: var(--font-weight);
   font-size: var(--font-regular);
 }

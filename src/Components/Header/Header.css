@@ -10,16 +10,6 @@
 .hero-tagline {
   padding: 15px 0;
   font-size: var(--font-tagline);
-  color: var(--color-muted);
+  color: var(--primary-variant);
   font-weight: 400;
-}
-
-@media screen and (max-width: 1024px) {
-  .primary-header {
-    font-size: 1.875rem;
-  }
-
-  .hero-tagline {
-    font-size: var(--font-tagline-smscr);
-  }
 }

@@ -1,0 +1,11 @@
+.dashboard {
+  display: flex;
+}
+
+.sidebar-wrapper {
+  flex: 2;
+}
+
+.dashboard-content {
+  flex: 6;
+}

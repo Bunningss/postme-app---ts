@@ -1,6 +1,6 @@
 .dropdown-item {
   padding: 5px;
-  margin: 1px 0;
+  margin: 2px 0;
   border-radius: var(--radius-sml);
   cursor: pointer;
   font-size: var(--font-regular);
