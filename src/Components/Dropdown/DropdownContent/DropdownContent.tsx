@@ -5,10 +5,13 @@ interface DropdownContentProps {
   setOpen: () => void;
 }
 
-const DropdownContent: React.FC<DropdownContentProps> = (props) => {
+const DropdownContent: React.FC<DropdownContentProps> = ({
+  children,
+  setOpen,
+}) => {
   return (
-    <div className="dropdown-content" onClick={props.setOpen}>
-      {props.children}
+    <div className="dropdown-content" onClick={setOpen}>
+      {children}
     </div>
   );
 };

@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
           <div className="col">
             <Logo />
           </div>
-          <div className="col">Navbar Links</div>
+          <div className="col"></div>
           <div className="col">
             {user ? (
               <UserMenu />

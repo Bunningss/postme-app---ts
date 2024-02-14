@@ -34,14 +34,8 @@ const Login: React.FC = () => {
         ))}
         <Button label="continue" fullWidth secondary />
       </form>
-      <p className="login-options">or</p>
-      <Button
-        label="continue with facebook"
-        fullWidth
-        secondary
-        icon={fb}
-        iconLabel="facebook icon"
-      />
+      <span className="login-options">Login using social account below</span>
+
       <Button
         label="continue with google"
         fullWidth
@@ -55,13 +49,6 @@ const Login: React.FC = () => {
         secondary
         icon={fb}
         iconLabel="github icon"
-      />
-      <Button
-        label="continue with instagram"
-        fullWidth
-        secondary
-        icon={fb}
-        iconLabel="instagram icon"
       />
     </>
   );

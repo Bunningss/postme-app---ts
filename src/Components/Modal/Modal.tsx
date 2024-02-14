@@ -1,5 +1,5 @@
 import Container from "../Container/Container";
-import Title from "../Title/Title";
+import Header from "../Header/Header";
 import "./Modal.css";
 
 interface ModalProps {
@@ -11,7 +11,7 @@ const Modal: React.FC<ModalProps> = ({ content, modalTitle }) => {
   return (
     <div className="modal">
       <div className="modal-title">
-        <Title title={modalTitle} center />
+        <Header title={modalTitle} titleCenter />
       </div>
       <div className="modal-content">
         <Container>{content}</Container>

@@ -3,6 +3,7 @@ import Container from "../Container/Container";
 import Header from "../Header/Header";
 import "./Hero.css";
 import { useNav } from "../../libs/hooks";
+import Separator from "../Separator/Separator";
 
 const Hero: React.FC = () => {
   const { intNav, extNav } = useNav();
@@ -11,21 +12,25 @@ const Hero: React.FC = () => {
       <Container>
         <div className="hero">
           <div className="hero-content">
-            <Header
-              primaryHeader="An example app built using React.js 18, typescript."
-              taglineHeader="I'm building a web app with React.js 18 and typescript. Aim of the project is to learn typescript."
-            />
-            <div className="action-buttons">
-              <Button
-                secondary
-                label="get started"
-                action={() => intNav("login")}
+            <Separator>
+              <Header
+                primary="An example app built using React.js 18, typescript."
+                tagline="I'm building a web app with React.js 18 and typescript. Aim of the project is to learn typescript."
               />
-              <Button
-                label="github"
-                action={() => extNav("github.com/Bunningss")}
-              />
-            </div>
+            </Separator>
+            <Separator>
+              <div className="action-buttons">
+                <Button
+                  secondary
+                  label="get started"
+                  action={() => intNav("login")}
+                />
+                <Button
+                  label="github"
+                  action={() => extNav("github.com/Bunningss")}
+                />
+              </div>
+            </Separator>
           </div>
         </div>
       </Container>

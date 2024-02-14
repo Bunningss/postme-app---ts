@@ -4,16 +4,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--font-inter);
 }
 
 :root {
   --primary: #1a1a1a;
-  --primary-variant: #2e2e2e;
+  --primary-variant: #495057;
   --secondary: #f4f5ff;
-  --secondary-variant: #f2f8f5;
+  --secondary-variant: #e5e7eb;
   --warning-color: red;
   --radius: 0.5rem;
+  --padding: 1rem;
+  --margin: 1rem 0;
+  --item-gap: 1rem;
   --font-regular: 1rem;
   --font-header: 3.75rem;
   --font-title: 2rem;
@@ -29,6 +31,7 @@ html {
   font-weight: 500;
   color: var(--primary);
   background-color: var(--secondary);
+  font-family: var(--font-inter);
 }
 
 a {

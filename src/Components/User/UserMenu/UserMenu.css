@@ -1,14 +1,15 @@
-.usermenu-content {
-  padding: 0 5px 10px 5px;
+.usermenu-header {
+  /* padding: 0 5px 10px 5px; */
+  padding: calc(var(--padding) / 2);
 }
 
 .username {
   color: var(--primary);
   font-weight: var(--font-weight);
-  font-size: var(--font-regular);
+  font-size: calc(var(--font-regular) * 1.2);
 }
 
 .email {
   font-weight: var(--font-weight);
-  font-size: var(--font-regular);
+  font-size: calc(var(--font-regular) / 1.1);
 }

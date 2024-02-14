@@ -3,13 +3,22 @@
 }
 
 .primary-header {
-  padding: 15px 0 0 0;
   font-size: var(--font-header);
+  margin: var(--margin);
 }
 
 .hero-tagline {
-  padding: 15px 0;
   font-size: var(--font-tagline);
   color: var(--primary-variant);
   font-weight: 400;
+}
+
+.title {
+  font-size: 2rem;
+  padding: calc(var(--padding) / 2);
+  text-transform: capitalize;
+}
+
+.title.center {
+  text-align: center;
 }

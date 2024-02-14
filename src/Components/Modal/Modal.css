@@ -7,7 +7,3 @@
 .modal-title {
   border-bottom: 1px solid var(--primary-variant);
 }
-
-.modal-content {
-  padding: 0.5rem 0;
-}

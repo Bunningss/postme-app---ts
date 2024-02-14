@@ -1,15 +1,16 @@
 .dropdown-content {
+  background-color: var(--secondary);
   width: max-content;
-  padding: 10px;
+  padding: calc(var(--padding) / 2);
   margin-top: 0.5rem;
   border-radius: calc(var(--radius) / 2);
   position: absolute;
   right: 0px;
-  background-color: var(--secondary-variant);
   user-select: none;
   -webkit-animation: scale-in-center var(--animation);
   animation: scale-in-center var(--animation);
   color: var(--primary-variant);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 @-webkit-keyframes scale-in-center {

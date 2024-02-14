@@ -1,15 +1,15 @@
 .dropdown-item {
-  padding: 5px;
-  margin: 2px 0;
+  padding: calc(var(--padding) / 2.6);
+  margin: 0.2rem 0;
   border-radius: calc(var(--radius) / 2);
   cursor: pointer;
   font-size: var(--font-regular);
+  transition: background-color var(--transition);
+  color: var(--primary-variant);
 }
 
 .dropdown-item:hover {
-  background-color: var(--primary-variant);
-  color: var(--secondary);
-  transition: background-color, color var(--transition);
+  background-color: var(--secondary-variant);
 }
 
 .dropdown-item a {

@@ -1,9 +1,8 @@
 .navbar-wrapper {
-  border-bottom: 1px solid var(--primary-variant);
+  border-bottom: 1px solid var(--secondary-variant);
 }
 
 .navbar {
-  height: 3.75rem;
   display: flex;
   align-items: center;
 }

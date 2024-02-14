@@ -1,0 +1,4 @@
+.separator {
+  margin: var(--margin);
+  width: 100%;
+}
