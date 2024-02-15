@@ -1,5 +1,5 @@
 .hero {
-  height: calc(100vh - 4.5rem);
+  height: var(--page-height);
   display: flex;
   justify-content: center;
   align-items: center;

@@ -6,6 +6,11 @@
   font-size: var(--font-regular);
   transition: background-color var(--transition);
   color: var(--primary-variant);
+  text-transform: capitalize;
+}
+
+.dropdown-item.selected {
+  background-color: var(--secondary-variant);
 }
 
 .dropdown-item:hover {
@@ -13,7 +18,7 @@
 }
 
 .dropdown-item a {
-  display: block;
-  height: 100%;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: calc(var(--item-gap) / 2);
 }

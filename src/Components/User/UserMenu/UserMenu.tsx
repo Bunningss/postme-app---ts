@@ -1,11 +1,26 @@
 import "./UserMenu.css";
 import User from "../User";
 import DropdownWrapper from "../../Dropdown/DropdownWrapper/DropdownWrapper";
-import DropdownItem from "../../Dropdown/DropdownItem/DropdownItem";
-import { Link } from "react-router-dom";
+import DropdownItem from "../../BarItem/BarItem";
 import DropdownSeparator from "../../Dropdown/DropdownSeparator/DropdownSeparator";
+import { DropdownItemsProps } from "../../../libs/types";
 
 const UserMenu: React.FC = () => {
+  const dropdownItems: DropdownItemsProps[] = [
+    {
+      label: "dashboard",
+      href: "/dashboard",
+    },
+    {
+      label: "billing",
+      href: "/billing",
+    },
+    {
+      label: "settings",
+      href: "/settings",
+    },
+  ];
+
   const body = (
     <>
       <div className="usermenu-header">
@@ -14,19 +29,13 @@ const UserMenu: React.FC = () => {
       </div>
       <DropdownSeparator />
       <div className="usermenu-main">
-        <DropdownItem>
-          <Link to="/dashboard">Dashboard</Link>
-        </DropdownItem>
-        <DropdownItem>
-          <Link to="/billing">Billing</Link>
-        </DropdownItem>
-        <DropdownItem>
-          <Link to="/settings">Settings</Link>
-        </DropdownItem>
+        {dropdownItems.map((item, indx) => (
+          <DropdownItem key={indx} item={item} />
+        ))}
       </div>
       <DropdownSeparator />
       <div className="usermenu-footer">
-        <DropdownItem>Logout</DropdownItem>
+        <DropdownItem item={{ label: "logout" }} />
       </div>
     </>
   );

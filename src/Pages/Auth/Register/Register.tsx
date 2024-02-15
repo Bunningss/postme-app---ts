@@ -1,4 +1,4 @@
-import Modal from "../../../Components/Modal/Modal";
+import Modal from "../../../Components/Modals/Modal";
 import "./Register.css";
 
 const Register: React.FC = () => {

@@ -2,7 +2,7 @@ import "./Login.css";
 import Button from "../../../Components/Button/Button";
 import Container from "../../../Components/Container/Container";
 import Input from "../../../Components/Input/Input";
-import Modal from "../../../Components/Modal/Modal";
+import Modal from "../../../Components/Modals/Modal";
 import { InputsProps } from "../../../libs/types";
 import fb from "../../../assets/icons/facebook.png";
 

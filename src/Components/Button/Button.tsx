@@ -20,12 +20,12 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       className={`button ${secondary ? "secondary" : ""} ${
-        fullWidth ? "width-full" : ""
+        fullWidth && "width-full"
       }`}
       onClick={action}
     >
       {icon && <img src={icon} alt={iconLabel} className="button-icon" />}
-      {label}
+      <span>{label}</span>
     </button>
   );
 };

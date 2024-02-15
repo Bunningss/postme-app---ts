@@ -1,21 +1,30 @@
-.headers {
-  text-align: center;
-}
-
 .primary-header {
   font-size: var(--font-header);
   margin: var(--margin);
 }
 
-.hero-tagline {
-  font-size: var(--font-tagline);
+.primary-header.center {
+  text-align: center;
+}
+
+.tagline {
+  margin: 0.5rem 0;
+  font-size: var(--font-regular);
   color: var(--primary-variant);
   font-weight: 400;
+  -webkit-margin-collapse: collapse;
+}
+
+.tagline.center {
+  text-align: center;
+}
+
+.tagline::first-letter {
+  text-transform: capitalize;
 }
 
 .title {
   font-size: 2rem;
-  padding: calc(var(--padding) / 2);
   text-transform: capitalize;
 }
 

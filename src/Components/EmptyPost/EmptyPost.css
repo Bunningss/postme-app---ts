@@ -1,0 +1,20 @@
+.empty-post {
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed var(--secondary-variant);
+  border-radius: calc(var(--radius) / 2);
+}
+
+.empty-post-icon {
+  margin: var(--margin);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: var(--secondary-variant);
+}

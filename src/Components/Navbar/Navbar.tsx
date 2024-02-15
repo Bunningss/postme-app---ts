@@ -1,4 +1,4 @@
-import { useNav } from "../../libs/hooks";
+import { useNav } from "../../hooks/useNavigation";
 import Button from "../Button/Button";
 import Container from "../Container/Container";
 import Logo from "../Logo/Logo";
@@ -6,7 +6,7 @@ import UserMenu from "../User/UserMenu/UserMenu";
 import "./Navbar.css";
 
 const Navbar: React.FC = () => {
-  const { intNav } = useNav();
+  const { internalNavigation } = useNav();
   let user = true;
 
   return (
@@ -21,7 +21,10 @@ const Navbar: React.FC = () => {
             {user ? (
               <UserMenu />
             ) : (
-              <Button label="login" action={() => intNav("login")} />
+              <Button
+                label="login"
+                action={() => internalNavigation("login")}
+              />
             )}
           </div>
         </div>

@@ -4,14 +4,14 @@ export const useNav = () => {
   const navigate = useNavigate();
 
   // handle internal navigation
-  const intNav = (url: string) => {
+  const internalNavigation = (url: string) => {
     navigate("/" + url);
   };
 
   // Handle external navigation
-  const extNav = (url: string) => {
+  const externalNavigation = (url: string) => {
     window.open("http://" + url);
   };
 
-  return { intNav, extNav };
+  return { internalNavigation, externalNavigation };
 };
