@@ -5,11 +5,11 @@
   justify-content: center;
   align-items: center;
   border: 1px dashed var(--secondary-variant);
-  border-radius: calc(var(--radius) / 2);
+  border-radius: var(--radius);
 }
 
 .empty-post-icon {
-  margin: var(--margin);
+  margin: calc(var(--margin) * 2);
   display: flex;
   justify-content: center;
   align-items: center;

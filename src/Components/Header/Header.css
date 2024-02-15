@@ -1,6 +1,6 @@
 .primary-header {
   font-size: var(--font-header);
-  margin: var(--margin);
+  margin: var(--margin-tb);
 }
 
 .primary-header.center {
@@ -8,11 +8,10 @@
 }
 
 .tagline {
-  margin: 0.5rem 0;
+  margin: var(--margin-tb);
   font-size: var(--font-regular);
   color: var(--primary-variant);
   font-weight: 400;
-  -webkit-margin-collapse: collapse;
 }
 
 .tagline.center {

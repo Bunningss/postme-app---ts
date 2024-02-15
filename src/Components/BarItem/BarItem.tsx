@@ -1,17 +1,24 @@
 import { Link } from "react-router-dom";
 import "./BarItem.css";
 
-interface DropdownItemProps {
+interface BarItemProps {
   item: {
     label: string;
     icon?: string;
     href?: string;
   };
+  selected?: string;
+  setSelected?: React.Dispatch<React.SetStateAction<string>>;
 }
 
-const DropdownItem: React.FC<DropdownItemProps> = ({ item }) => {
+const BarItem: React.FC<BarItemProps> = ({ item, selected, setSelected }) => {
   return (
-    <div className="dropdown-item">
+    <div
+      className={
+        selected === item.label ? "dropdown-item selected" : "dropdown-item"
+      }
+      onClick={setSelected ? () => setSelected(item.label) : undefined}
+    >
       <Link to={item?.href ? item?.href : ""}>
         {item?.icon && <img src={item?.icon} alt="" className="sidebar-icon" />}
         <span>{item?.label}</span>
@@ -20,4 +27,4 @@ const DropdownItem: React.FC<DropdownItemProps> = ({ item }) => {
   );
 };
 
-export default DropdownItem;
+export default BarItem;

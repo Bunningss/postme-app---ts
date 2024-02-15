@@ -1,9 +1,9 @@
 .dropdown-content {
   background-color: var(--secondary);
-  width: max-content;
-  padding: calc(var(--padding) / 2);
+  min-width: 8rem;
+  padding: var(--padding);
   margin-top: 0.5rem;
-  border-radius: calc(var(--radius) / 2);
+  border-radius: var(--radius);
   position: absolute;
   right: 0px;
   user-select: none;

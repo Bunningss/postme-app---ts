@@ -1,7 +1,7 @@
 import "./UserMenu.css";
 import User from "../User";
 import DropdownWrapper from "../../Dropdown/DropdownWrapper/DropdownWrapper";
-import DropdownItem from "../../BarItem/BarItem";
+import BarItem from "../../BarItem/BarItem";
 import DropdownSeparator from "../../Dropdown/DropdownSeparator/DropdownSeparator";
 import { DropdownItemsProps } from "../../../libs/types";
 
@@ -21,7 +21,7 @@ const UserMenu: React.FC = () => {
     },
   ];
 
-  const body = (
+  const body: JSX.Element = (
     <>
       <div className="usermenu-header">
         <h4 className="username">John Doe</h4>
@@ -30,12 +30,12 @@ const UserMenu: React.FC = () => {
       <DropdownSeparator />
       <div className="usermenu-main">
         {dropdownItems.map((item, indx) => (
-          <DropdownItem key={indx} item={item} />
+          <BarItem key={indx} item={item} />
         ))}
       </div>
       <DropdownSeparator />
       <div className="usermenu-footer">
-        <DropdownItem item={{ label: "logout" }} />
+        <BarItem item={{ label: "logout" }} />
       </div>
     </>
   );

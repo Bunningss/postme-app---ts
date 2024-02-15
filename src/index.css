@@ -13,9 +13,13 @@
   --secondary-variant: #e5e7eb;
   --warning-color: red;
   --page-height: calc(100vh - 4.5rem);
-  --radius: 0.5rem;
-  --padding: 1rem;
-  --margin: 1rem 0;
+  --radius: 0.25rem;
+  --padding: 0.5rem;
+  --padding-tb: 0.5rem 0;
+  --padding-rl: 0.5rem 0;
+  --margin: 0.5rem;
+  --margin-tb: 0.5rem 0;
+  --margin-rl: 0.5rem 0;
   --item-gap: 1rem;
   --font-regular: 1rem;
   --font-header: 3.75rem;

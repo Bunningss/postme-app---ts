@@ -5,6 +5,6 @@
 }
 
 .modal-title {
-  padding: calc(var(--padding) / 2);
+  padding: var(--padding);
   border-bottom: 1px solid var(--primary-variant);
 }

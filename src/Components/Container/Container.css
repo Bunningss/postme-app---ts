@@ -6,13 +6,7 @@
 }
 
 .container-content {
-  padding: calc(var(--padding) / 2);
+  padding: var(--padding);
   max-width: 1220px;
   width: 100%;
-}
-
-@media screen and (max-width: 1024px) {
-  .container-content {
-    padding: calc(var(--padding) / 2);
-  }
 }

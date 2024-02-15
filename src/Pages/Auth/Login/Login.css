@@ -15,7 +15,7 @@
 .login-options {
   display: block;
   width: 100%;
-  padding: 0.5rem 0;
+  padding: var(--padding-tb);
   font-size: var(--font-regular);
   font-weight: 600;
   text-align: center;

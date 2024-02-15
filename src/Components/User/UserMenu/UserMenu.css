@@ -1,5 +1,5 @@
 .usermenu-header {
-  padding: calc(var(--padding) / 2);
+  padding: var(--padding);
   padding-top: 0;
 }
 

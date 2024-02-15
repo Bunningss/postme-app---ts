@@ -6,6 +6,7 @@ import Header from "../../Components/Header/Header";
 import Sidebar from "../../Components/Sidebar/Sidebar";
 import PostModal from "../../Components/Modals/PostModal/PostModal";
 import EmptyPost from "../../Components/EmptyPost/EmptyPost";
+import Post from "../../Components/Post/Post";
 
 const Dashboard: React.FC = () => {
   return (
@@ -21,7 +22,13 @@ const Dashboard: React.FC = () => {
               <Button label="new post" secondary icon={plus} />
             </div>
             <PostModal>
-              <EmptyPost />
+              {/* <EmptyPost /> */}
+              <Post />
+              <Post />
+              <Post />
+              <Post />
+              <Post />
+              <Post />
             </PostModal>
           </Container>
         </div>

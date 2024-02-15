@@ -1,5 +1,5 @@
 .input {
-  margin: 0.5rem 0;
+  margin: var(--margin-tb);
   padding: 0.75rem;
   width: 100%;
   border: 1px solid var(--primary-variant);
