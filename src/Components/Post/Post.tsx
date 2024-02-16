@@ -18,7 +18,7 @@ const Post: React.FC = () => {
       <Container>
         <div className="post">
           <div className="post-details">
-            <Link to="">
+            <Link to="/post">
               <h6 className="post-title">untitled header</h6>
             </Link>
             <p className="post-date">aug 15, 2024</p>

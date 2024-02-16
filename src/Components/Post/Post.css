@@ -17,6 +17,11 @@
   border-top: none;
 }
 
+.post-wrapper:only-child {
+  border-radius: 0.25rem;
+  border: 1px solid var(--secondary-variant);
+}
+
 .post {
   padding: var(--padding-tb);
   display: flex;
