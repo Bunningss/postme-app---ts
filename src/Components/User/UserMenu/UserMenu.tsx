@@ -4,20 +4,24 @@ import DropdownWrapper from "../../Dropdown/DropdownWrapper/DropdownWrapper";
 import BarItem from "../../BarItem/BarItem";
 import DropdownSeparator from "../../Dropdown/DropdownSeparator/DropdownSeparator";
 import { DropdownItemsProps } from "../../../libs/types";
+import { useContext } from "react";
+import Store from "../../../Context/Store";
 
 const UserMenu: React.FC = () => {
+  const { sidebarSelected, setSidebarSelected } = useContext(Store);
+
   const dropdownItems: DropdownItemsProps[] = [
     {
-      label: "dashboard",
+      label: "posts",
       href: "/dashboard",
     },
     {
       label: "billing",
-      href: "/billing",
+      href: "/dashboard",
     },
     {
       label: "settings",
-      href: "/settings",
+      href: "/dashboard",
     },
   ];
 
@@ -30,7 +34,12 @@ const UserMenu: React.FC = () => {
       <DropdownSeparator />
       <div className="usermenu-main">
         {dropdownItems.map((item, indx) => (
-          <BarItem key={indx} item={item} />
+          <BarItem
+            key={indx}
+            item={item}
+            selected={sidebarSelected}
+            setSelected={setSidebarSelected}
+          />
         ))}
       </div>
       <DropdownSeparator />

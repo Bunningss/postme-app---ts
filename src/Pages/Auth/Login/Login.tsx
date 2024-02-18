@@ -4,7 +4,8 @@ import Container from "../../../Components/Container/Container";
 import Input from "../../../Components/Input/Input";
 import Modal from "../../../Components/Modals/Modal";
 import { InputsProps } from "../../../libs/types";
-import fb from "../../../assets/icons/facebook.png";
+import google from "../../../assets/icons/google.png";
+import github from "../../../assets/icons/github.png";
 
 const Login: React.FC = () => {
   const handleSubmit = (e: React.MouseEvent<HTMLFormElement>) => {
@@ -40,14 +41,14 @@ const Login: React.FC = () => {
         label="continue with google"
         fullWidth
         secondary
-        icon={fb}
+        icon={google}
         iconLabel="google icon"
       />
       <Button
         label="continue with github"
         fullWidth
         secondary
-        icon={fb}
+        icon={github}
         iconLabel="github icon"
       />
     </>

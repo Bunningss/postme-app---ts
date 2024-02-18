@@ -1,14 +1,13 @@
 import { useState } from "react";
 import Store from "./Store";
 import { PostProps } from "./types";
-import { usePosts } from "../hooks/usePosts";
 
 interface ContextProviderProps {
   children: React.ReactNode;
 }
 
 const ContextProvider: React.FC<ContextProviderProps> = ({ children }) => {
-  const [sidebarSelected, setSidebarSelected] = useState<string>("posts");
+  const [sidebarSelected, setSidebarSelected] = useState<string>("");
   const [posts, setPosts] = useState<PostProps[]>([]);
   return (
     <Store.Provider
