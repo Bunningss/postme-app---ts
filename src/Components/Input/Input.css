@@ -1,11 +1,15 @@
 .input {
   margin: var(--margin-tb);
   padding: 0.75rem;
-  width: 100%;
+  width: 25rem;
   border: 1px solid var(--primary-variant);
   border-radius: var(--radius);
   font-size: var(--font-regular);
   font-weight: var(--font-weight);
+}
+
+.input.full {
+  width: 100%;
 }
 
 .input:invalid[data-focused="true"] {

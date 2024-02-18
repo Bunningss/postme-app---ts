@@ -30,7 +30,7 @@ const Login: React.FC = () => {
     <>
       <form className="login-form" onSubmit={handleSubmit}>
         {inputs.map((input, indx) => (
-          <Input {...input} key={indx} />
+          <Input {...input} key={indx} fullWidth />
         ))}
         <Button label="continue" fullWidth secondary />
       </form>

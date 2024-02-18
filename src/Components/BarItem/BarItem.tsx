@@ -9,9 +9,15 @@ interface BarItemProps {
   };
   selected?: string;
   setSelected?: React.Dispatch<React.SetStateAction<string>>;
+  action?: () => void;
 }
 
-const BarItem: React.FC<BarItemProps> = ({ item, selected, setSelected }) => {
+const BarItem: React.FC<BarItemProps> = ({
+  item,
+  selected,
+  setSelected,
+  action,
+}) => {
   return (
     <div
       className={
@@ -19,7 +25,7 @@ const BarItem: React.FC<BarItemProps> = ({ item, selected, setSelected }) => {
       }
       onClick={setSelected ? () => setSelected(item.label) : undefined}
     >
-      <Link to={item?.href ? item?.href : ""}>
+      <Link to={item?.href ? item?.href : ""} onClick={action}>
         {item?.icon && <img src={item?.icon} alt="" className="sidebar-icon" />}
         <span>{item?.label}</span>
       </Link>

@@ -5,11 +5,11 @@ import doc from "../../assets/icons/doc.png";
 import settings from "../../assets/icons/settings.png";
 import card from "../../assets/icons/card.png";
 import { SidebarItemsProps } from "../../libs/types";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import Store from "../../Context/Store";
 
 const Sidebar: React.FC = () => {
-  const [sideabarSelected, setSidebarSelected] = useState<string>("posts");
-
+  const { sidebarSelected, setSidebarSelected } = useContext(Store);
   const sidebarItems: SidebarItemsProps[] = [
     {
       label: "posts",
@@ -32,7 +32,7 @@ const Sidebar: React.FC = () => {
           <BarItem
             key={indx}
             item={item}
-            selected={sideabarSelected}
+            selected={sidebarSelected}
             setSelected={setSidebarSelected}
           />
         ))}

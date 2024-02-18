@@ -1,0 +1,5 @@
+.post-modal {
+  margin-top: 3rem;
+  border-radius: var(--radius);
+  border: 1px dashed var(--secondary-variant);
+}

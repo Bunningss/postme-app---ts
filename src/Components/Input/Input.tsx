@@ -6,6 +6,8 @@ interface InputProps {
   placeholder: string;
   required: boolean;
   errorMsg: string;
+  fullWidth?: boolean;
+  value?: string;
 }
 
 const Input: React.FC<InputProps> = ({
@@ -13,6 +15,8 @@ const Input: React.FC<InputProps> = ({
   placeholder,
   required,
   errorMsg,
+  fullWidth,
+  value,
 }) => {
   const [focused, setFocused] = useState<boolean>(false);
 
@@ -22,12 +26,13 @@ const Input: React.FC<InputProps> = ({
 
   return (
     <input
-      className="input"
+      className={fullWidth ? "input full" : "input"}
       type={type}
       placeholder={placeholder}
       required={required}
       onBlur={handleFocus}
       data-focused={focused}
+      value={value}
     />
   );
 };

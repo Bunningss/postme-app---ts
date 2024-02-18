@@ -1,9 +1,13 @@
 .post-wrapper {
-  border: 1px solid var(--secondary-variant);
-  border-radius: var(--radius);
+  border-bottom: 1px dashed var(--secondary-variant);
+  /* border-radius: var(--radius); */
 }
 
-.post-wrapper:not(:first-child):not(:last-child) {
+.post-wrapper:last-child {
+  border-bottom: none;
+}
+
+/* .post-wrapper:not(:first-child):not(:last-child) {
   border-radius: 0;
   border-top: none;
 }
@@ -20,7 +24,7 @@
 .post-wrapper:only-child {
   border-radius: 0.25rem;
   border: 1px solid var(--secondary-variant);
-}
+} */
 
 .post {
   padding: var(--padding-tb);

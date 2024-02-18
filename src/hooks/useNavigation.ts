@@ -8,10 +8,14 @@ export const useNav = () => {
     navigate("/" + url);
   };
 
+  const useTest = (url: string) => {
+    navigate("/" + url);
+  };
+
   // Handle external navigation
   const externalNavigation = (url: string) => {
     window.open("http://" + url);
   };
 
-  return { internalNavigation, externalNavigation };
+  return { internalNavigation, useTest, externalNavigation };
 };

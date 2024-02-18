@@ -1,11 +1,9 @@
 .empty-post {
-  min-height: inherit;
+  min-height: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px dashed var(--secondary-variant);
-  border-radius: var(--radius);
 }
 
 .empty-post-icon {

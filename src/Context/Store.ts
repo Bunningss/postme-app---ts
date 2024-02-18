@@ -1,13 +1,11 @@
-import React, { SetStateAction, createContext } from "react";
-
-interface StoreProps {
-  sidebarSelected: string;
-  setSidebarSelected: React.Dispatch<SetStateAction<string>>;
-}
+import { createContext } from "react";
+import { StoreProps } from "./types";
 
 const Store = createContext<StoreProps>({
   sidebarSelected: "",
   setSidebarSelected: () => {},
+  posts: [{ id: 0, title: "", postContent: "", date: "" }],
+  setPosts: () => {},
 });
 
 export default Store;
